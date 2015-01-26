@@ -1,0 +1,12 @@
+# Locate these two files, and the following to your .bashrc/.profile
+
+. /Applications/SourceTree.app/Contents/Resources/git_local/contrib/completion/git-completion.bash
+. /Applications/SourceTree.app/Contents/Resources/git_local/contrib/completion/git-prompt.sh
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+WHITE="\[\033[1;37m\]"
+RESET="\[\033[1;0m\]"
+GIT='$(__git_ps1 "[%s]")'
+PS1="\n$WHITE\u$RESET: \W$YELLOW$GIT $GREEN\$$RESET "
